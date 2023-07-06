@@ -4,12 +4,9 @@ import javax.servlet.*;
 import java.io.IOException;
 
 public class QueryRoomServlet implements Servlet {
-    public QueryRoomServlet(){
-        System.out.println("被创建");
-    }
     @Override
     public void init(ServletConfig servletConfig) throws ServletException {
-
+        System.out.println("queryServlet init is called");
     }
     @Override
     public ServletConfig getServletConfig() {
@@ -18,7 +15,7 @@ public class QueryRoomServlet implements Servlet {
 
     @Override
     public void service(ServletRequest servletRequest, ServletResponse servletResponse) throws ServletException, IOException {
-        System.out.println("service is called");
+        System.out.println("queryServlet service is called");
     }
     @Override
     public String getServletInfo() {
@@ -26,6 +23,6 @@ public class QueryRoomServlet implements Servlet {
     }
     @Override
     public void destroy() {
-
+        System.out.println("room service destroy is call");
     }
 }
