@@ -61,9 +61,11 @@ public class WebContainer {
        if(urlPatternToServletClass.containsKey(urlPattern)) {
            String servletClass = urlPatternToServletClass.get(urlPattern);
            Servlet servlet = createServlet(urlPattern,servletClass);
+           servlet.init(null);
            servlet.service(servletRequest,servletResponse);
            return;
        }
+        System.out.println(urlPattern);
         System.out.println("请求错误");
     }
 

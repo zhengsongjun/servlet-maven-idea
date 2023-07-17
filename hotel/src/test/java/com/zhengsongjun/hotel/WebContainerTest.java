@@ -34,7 +34,7 @@ public class WebContainerTest extends TestCase {
         WebContainer webContainer = new WebContainer();
         webContainer.start(configurationList);
         webContainer.doService("/queryRoom",null,null);
-        webContainer.doService("/bookRoom",null,null);
+        webContainer.doService("/book",null,null);
         webContainer.doService("/checkIn",null,null);
         webContainer.doService("/checkOut",null,null);
         webContainer.doService("/end",null,null);
