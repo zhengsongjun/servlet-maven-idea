@@ -4,14 +4,20 @@ import javax.servlet.*;
 import java.io.IOException;
 
 public abstract class MyGenericServlet implements Servlet {
+    private ServletConfig config;
     @Override
     public void init(ServletConfig servletConfig) throws ServletException {
-
+        this.config = servletConfig;
+        init();
     }
+
+    public void init(){
+
+    };
 
     @Override
     public ServletConfig getServletConfig() {
-        return null;
+        return this.config;
     }
 
     @Override
