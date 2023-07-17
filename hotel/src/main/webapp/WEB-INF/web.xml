@@ -27,6 +27,17 @@
         <servlet-class>com.zhengsongjun.hotel.BookRoomServlet</servlet-class>
     </servlet>
 
+    <servlet>
+        <servlet-name>getServlet</servlet-name>
+        <servlet-class>com.zhengsongjun.hotel.GetServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>postServlet</servlet-name>
+        <servlet-class>com.zhengsongjun.hotel.PostServlet</servlet-class>
+    </servlet>
+
+
     <servlet-mapping>
         <servlet-name>QueryRoomServlet</servlet-name>
         <url-pattern>/queryRoom</url-pattern>
@@ -38,5 +49,23 @@
         <load-on-startup>1</load-on-startup>
     </servlet-mapping>
 
+    <servlet-mapping>
+        <servlet-name>getServlet</servlet-name>
+        <url-pattern>/getServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>postServlet</servlet-name>
+        <url-pattern>/postServlet</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>userRegister</servlet-name>
+        <servlet-class>com.zhengsongjun.hotel.UserRegisterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>userRegister</servlet-name>
+        <url-pattern>/userRegister</url-pattern>
+    </servlet-mapping>
 
 </web-app>
