@@ -19,12 +19,12 @@
 
     <servlet>
         <servlet-name>QueryRoomServlet</servlet-name>
-        <servlet-class>com.zhengsongjun.hotel.QueryRoomServlet.java</servlet-class>
+        <servlet-class>com.zhengsongjun.hotel.QueryRoomServlet</servlet-class>
     </servlet>
 
     <servlet>
         <servlet-name>BookRoomServlet</servlet-name>
-        <servlet-class>com.zhengsongjun.hotel.BookRoomServlet.java</servlet-class>
+        <servlet-class>com.zhengsongjun.hotel.BookRoomServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>
