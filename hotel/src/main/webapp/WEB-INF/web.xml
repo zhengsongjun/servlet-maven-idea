@@ -75,7 +75,7 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>CreateCookiesServlet</servlet-name>
-        <url-pattern>/createCookies</url-pattern>
+        <url-pattern>/cookie/createCookies</url-pattern>
     </servlet-mapping>
 
 
@@ -85,7 +85,7 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>ValidateCookiesServlet</servlet-name>
-        <url-pattern>/validateCookies</url-pattern>
+        <url-pattern>/cookie/validateCookies</url-pattern>
     </servlet-mapping>
 
 </web-app>
