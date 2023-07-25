@@ -129,4 +129,23 @@
         <url-pattern>/user/changePassword</url-pattern>
     </servlet-mapping>
 
+
+    <servlet>
+        <servlet-name>CreateSession</servlet-name>
+        <servlet-class>com.zhengsongjun.hotel.session.CreateSessionServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CreateSession</servlet-name>
+        <url-pattern>/session/createSession</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>QuerySession</servlet-name>
+        <servlet-class>com.zhengsongjun.hotel.session.QuerySessionServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>QuerySession</servlet-name>
+        <url-pattern>/session/querySession</url-pattern>
+    </servlet-mapping>
+
 </web-app>
