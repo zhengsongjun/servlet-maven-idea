@@ -88,4 +88,45 @@
         <url-pattern>/cookie/validateCookies</url-pattern>
     </servlet-mapping>
 
+
+
+    <servlet>
+        <servlet-name>RegisterServlet</servlet-name>
+        <servlet-class>com.zhengsongjun.hotel.user.RegisterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegisterServlet</servlet-name>
+        <url-pattern>/user/register</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.zhengsongjun.hotel.user.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/user/login</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>QueryRoomServlet</servlet-name>
+        <servlet-class>com.zhengsongjun.hotel.user.QueryRoomServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>QueryRoomServlet</servlet-name>
+        <url-pattern>/user/queryRoom</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>ChangePassword</servlet-name>
+        <servlet-class>com.zhengsongjun.hotel.user.ChangePassword</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ChangePassword</servlet-name>
+        <url-pattern>/user/changePassword</url-pattern>
+    </servlet-mapping>
+
 </web-app>
