@@ -68,4 +68,24 @@
         <url-pattern>/userRegister</url-pattern>
     </servlet-mapping>
 
+
+    <servlet>
+        <servlet-name>CreateCookiesServlet</servlet-name>
+        <servlet-class>com.zhengsongjun.hotel.cookie.CreateCookiesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CreateCookiesServlet</servlet-name>
+        <url-pattern>/createCookies</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>ValidateCookiesServlet</servlet-name>
+        <servlet-class>com.zhengsongjun.hotel.cookie.ValidateCookiesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ValidateCookiesServlet</servlet-name>
+        <url-pattern>/validateCookies</url-pattern>
+    </servlet-mapping>
+
 </web-app>
