@@ -163,8 +163,18 @@
         <servlet-class>com.zhengsongjun.hotel.session.QueryCartServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>QueryCardServlet</servlet-name>
+        <servlet-name>QueryCartServlet</servlet-name>
         <url-pattern>/session/queryCart</url-pattern>
     </servlet-mapping>
+
+
+    <filter>
+        <filter-name>FilterDemo</filter-name>
+        <filter-class>com.zhengsongjun.hotel.filter.FilterDemo</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>FilterDemo</filter-name>
+        <url-pattern>/session/*</url-pattern>
+    </filter-mapping>
 
 </web-app>

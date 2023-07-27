@@ -10,6 +10,7 @@ import java.io.IOException;
 public class QueryCartServlet extends HttpServlet {
     @Override
     public void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        System.out.println("执行查询业务");
         HttpSession session = req.getSession(true);
         Object obj = session.getAttribute("cart");
         if(obj == null){
