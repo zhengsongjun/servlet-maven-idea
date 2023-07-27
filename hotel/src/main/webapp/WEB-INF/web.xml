@@ -148,4 +148,23 @@
         <url-pattern>/session/querySession</url-pattern>
     </servlet-mapping>
 
+
+    <servlet>
+        <servlet-name>AddCartServlet</servlet-name>
+        <servlet-class>com.zhengsongjun.hotel.session.AddCartServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddCartServlet</servlet-name>
+        <url-pattern>/session/addCart</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>QueryCartServlet</servlet-name>
+        <servlet-class>com.zhengsongjun.hotel.session.QueryCartServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>QueryCardServlet</servlet-name>
+        <url-pattern>/session/queryCart</url-pattern>
+    </servlet-mapping>
+
 </web-app>
