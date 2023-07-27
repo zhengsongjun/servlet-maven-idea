@@ -7,12 +7,12 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-public class FilterDemo extends HttpFilter {
+public class FilterDemo3  extends HttpFilter {
     @Override
     public void doFilter(HttpServletRequest req, HttpServletResponse res, FilterChain chain) throws IOException, ServletException {
-        System.out.println("拦截器filterDemo1进入执行");
+        System.out.println("拦截器filterDemo3进入执行");
         chain.doFilter(req, res);
-        System.out.println("拦截器filterDemo1出去执行");
+        System.out.println("拦截器filterDemo3出去执行");
     }
 
 }

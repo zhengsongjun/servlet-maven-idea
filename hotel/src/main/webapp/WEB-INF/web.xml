@@ -177,4 +177,23 @@
         <url-pattern>/session/*</url-pattern>
     </filter-mapping>
 
+
+    <filter>
+        <filter-name>FilterDemo2</filter-name>
+        <filter-class>com.zhengsongjun.hotel.filter.FilterDemo2</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>FilterDemo2</filter-name>
+        <url-pattern>/session/*</url-pattern>
+    </filter-mapping>
+
+    <filter>
+        <filter-name>FilterDemo3</filter-name>
+        <filter-class>com.zhengsongjun.hotel.filter.FilterDemo3</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>FilterDemo3</filter-name>
+        <url-pattern>/session/*</url-pattern>
+    </filter-mapping>
+
 </web-app>
